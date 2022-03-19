@@ -1,0 +1,79 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: #9FBD59;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: url(./cursor.png), default;
+    padding: 0;
+    margin: 0;
+  }
+  
+  
+  
+  .bg-game, 
+  .bg-game-over 
+  {
+    background-image: url(background.png);
+    background-repeat: no-repeat;
+    width: 1920px;
+    height: 1080px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hole-container {
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .hole {
+    background-color: #000;
+    border-radius: 50%;
+    overflow: visible;
+    width: 245px;
+    height: 245px;
+    margin: 15px;
+  }
+  
+  .mole {
+    position: relative;
+    left: -35px;
+    width: 315px;
+  }
+  
+  .gone,
+  .hiden 
+  {
+    display: none;
+  }
+  
+  .hungry {
+    cursor: url(./cursor-worm.png) , default;
+  }
+  
+  .bg-game-over {
+    background-image: url(./win.png);
+    background-position: center center;
+  }
+  
+  .score-box {
+    width: 1660px;
+  }
+  
+  .worm-container {
+    overflow: hidden;
+    transition: width 0.5s ease-in-out;
+  }
+  
+  .worm {
+    width: 1660px;
+    height: 100px;
+  }
